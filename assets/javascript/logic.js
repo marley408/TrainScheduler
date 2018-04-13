@@ -78,7 +78,7 @@ ref.on("child_added", function(childSnapshot, prevChildKey) {
     console.log("CURRENT TIME: " + moment(currentTime).format("HH:mm"))
 
     
-    var diffTime = moment().diff(moment(firstTimeConverted, "minutes"))
+    var diffTime = moment().diff(moment(firstTimeConverted), "minutes")
     console.log("DIFFERENCE IN TIME: " + diffTime + 'mins')
 
 
@@ -91,7 +91,7 @@ ref.on("child_added", function(childSnapshot, prevChildKey) {
     
     
     var nextArrivalText = moment().add(tMinutesTillTrain, "minutes").format("hh:mm") 
-    var nextArrivalValue = moment().add(tMinutesTillTrain, "minutes") 
+    // var nextArrivalValue = moment().add(tMinutesTillTrain, "minutes") 
     console.log("NEXT ARRIVAL: " + nextArrivalText);
 
 
