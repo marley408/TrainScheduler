@@ -1,0 +1,20 @@
+.jumbotron{
+    background-color:dodgerblue;
+    text-align: center;
+}
+
+#timeTable{
+    background-color: grey;
+
+}
+
+.panel-heading{
+    background-color: grey;
+    padding: .5rem;
+    margin-bottom: 1rem;
+}
+
+.panel-heading h3{
+    margin-bottom: 0;
+
+}
